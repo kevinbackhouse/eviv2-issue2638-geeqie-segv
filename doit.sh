@@ -7,5 +7,5 @@ cd exiv2
 mkdir -p build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
-cmake --build
+cmake --build .
 cmake --install .
