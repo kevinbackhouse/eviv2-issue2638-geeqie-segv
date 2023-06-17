@@ -1,0 +1,6 @@
+[submodule "geeqie"]
+	path = geeqie
+	url = https://github.com/BestImageViewer/geeqie.git
+[submodule "exiv2"]
+	path = exiv2
+	url = https://github.com/Exiv2/exiv2.git
