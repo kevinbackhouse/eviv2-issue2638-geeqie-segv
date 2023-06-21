@@ -11,7 +11,7 @@ sudo make install
 cd ../..
 
 cd geeqie
-meson setup build
+meson setup --optimization=g build
 ninja -C build
 sudo ninja -C build install
 cd ..

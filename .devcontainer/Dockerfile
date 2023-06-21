@@ -15,6 +15,11 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 
 # [Optional] Uncomment this section to install additional packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends git build-essential libglib2.0-0 libtool meson ninja-build yelp-tools help2man doclifter libglib2.0-dev libglib2.0-dev-bin libgtk-3-dev
+    && apt-get -y install --no-install-recommends git build-essential libglib2.0-0 libtool meson ninja-build yelp-tools \
+            help2man doclifter liblcms2-dev exiv2 libgexiv2-dev evince evince liblua5.3-dev  libffmpegthumbnailer-dev \
+            libjpeg-dev librsvg2-common  libwmf0.2-7-gtk exiftran exiftran imagemagick imagemagick   liblcms2-utils \
+            pandoc pandoc gphoto2 gphoto2 libimage-exiftool-perl libimage-exiftool-perl  libheif-dev webp-pixbuf-loader \
+            webp-pixbuf-loader  libdjvulibre-dev  libopenjp2-7-dev  libraw-dev libomp-dev  libarchive-dev  libgspell-1-dev \
+            libchamplain-gtk-0.12-dev  libchamplain-0.12-dev  libpoppler-glib-dev
 
 RUN git clone https://github.com/Exiv2/exiv2.git && cd exiv2 && git checkout v0.28.0 && ./ci/install_dependencies.sh && cd .. && rm -rf exiv2
