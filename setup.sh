@@ -1,4 +1,5 @@
 #!/bin/bash
+pip3 install dogtail
 
 git submodule update --init
 
