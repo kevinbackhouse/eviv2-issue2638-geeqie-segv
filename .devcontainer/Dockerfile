@@ -21,6 +21,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
             pandoc pandoc gphoto2 gphoto2 libimage-exiftool-perl libimage-exiftool-perl libheif-dev webp-pixbuf-loader \
             webp-pixbuf-loader libdjvulibre-dev libopenjp2-7-dev libraw-dev libomp-dev libarchive-dev libgspell-1-dev \
             libchamplain-gtk-0.12-dev libchamplain-0.12-dev libpoppler-glib-dev python3-pip glib2.0 python3-cairo-dev \
-            python3-pyatspi
+            python3-pyatspi xauth
 
 RUN git clone https://github.com/Exiv2/exiv2.git && cd exiv2 && git checkout v0.28.0 && ./ci/install_dependencies.sh && cd .. && rm -rf exiv2
